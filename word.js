@@ -1,4 +1,4 @@
-const Letter = require("./letter.js")
+var Letter = require("./letter.js")
 
 
 function Word (word){
@@ -6,8 +6,8 @@ function Word (word){
     this.wordArray = this.word.split('');
     this.wordLength = this.word.length;
     this.wordState = function () {
-        let arr = this.wordArray;
-        let letterArr = arr.map(function (val) {
+        var arr = this.wordArray;
+        var letterArr = arr.map(function (val) {
             return new Letter(val)
         });
         return letterArr;
@@ -21,9 +21,9 @@ module.exports = Word;
 
 
 
-// const arr = [ 'c', 'l', 'i', 'p', 'p', 'e', 'r', 's' ];
+// var arr = [ 'c', 'l', 'i', 'p', 'p', 'e', 'r', 's' ];
 
-// let mappedArr = arr.map(function (){
+// var mappedArr = arr.map(function (){
     
 //     return "*";
 
